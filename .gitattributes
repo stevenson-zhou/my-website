@@ -1,0 +1,15 @@
+# 统一换行：入库规范为 LF，避免 Windows CRLF 让整个文件都显示为改动
+* text=auto eol=lf
+
+# 文本类文件按文本处理（内容为 UTF-8 中文）
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# 图片按二进制处理，禁止任何换行符转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
